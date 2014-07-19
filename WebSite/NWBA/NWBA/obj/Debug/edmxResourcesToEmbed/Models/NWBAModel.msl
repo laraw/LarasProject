@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NationalAustraliaBankModelStoreContainer" CdmEntityContainer="NWBAEntities">
+    <EntitySetMapping Name="accounts">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.account">
+        <MappingFragment StoreEntitySet="account">
+          <ScalarProperty Name="accountNumber" ColumnName="accountNumber" />
+          <ScalarProperty Name="accountTypeCode" ColumnName="accountTypeCode" />
+          <ScalarProperty Name="custID" ColumnName="custID" />
+          <ScalarProperty Name="modifyDate" ColumnName="modifyDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="accountTypeLookups">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.accountTypeLookup">
+        <MappingFragment StoreEntitySet="accountTypeLookup">
+          <ScalarProperty Name="accountTypeCode" ColumnName="accountTypeCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="addressTypeLookups">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.addressTypeLookup">
+        <MappingFragment StoreEntitySet="addressTypeLookup">
+          <ScalarProperty Name="addressTypeCode" ColumnName="addressTypeCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="billPays">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.billPay">
+        <MappingFragment StoreEntitySet="billPay">
+          <ScalarProperty Name="billPayID" ColumnName="billPayID" />
+          <ScalarProperty Name="accountNum" ColumnName="accountNum" />
+          <ScalarProperty Name="payeeID" ColumnName="payeeID" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="scheduleDate" ColumnName="scheduleDate" />
+          <ScalarProperty Name="periodCode" ColumnName="periodCode" />
+          <ScalarProperty Name="modifyDate" ColumnName="modifyDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customers">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.customer">
+        <MappingFragment StoreEntitySet="customer">
+          <ScalarProperty Name="custID" ColumnName="custID" />
+          <ScalarProperty Name="custName" ColumnName="custName" />
+          <ScalarProperty Name="TFN" ColumnName="TFN" />
+          <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customerAddresses">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.customerAddress">
+        <MappingFragment StoreEntitySet="customerAddress">
+          <ScalarProperty Name="pkID" ColumnName="pkID" />
+          <ScalarProperty Name="custID" ColumnName="custID" />
+          <ScalarProperty Name="addressline1" ColumnName="addressline1" />
+          <ScalarProperty Name="addressline2" ColumnName="addressline2" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="addressTypeCode" ColumnName="addressTypeCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="customerPhoneNumbers">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.customerPhoneNumber">
+        <MappingFragment StoreEntitySet="customerPhoneNumber">
+          <ScalarProperty Name="pkID" ColumnName="pkID" />
+          <ScalarProperty Name="custID" ColumnName="custID" />
+          <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+          <ScalarProperty Name="phoneTypeCode" ColumnName="phoneTypeCode" />
+          <ScalarProperty Name="silent" ColumnName="silent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logins">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.login">
+        <MappingFragment StoreEntitySet="login">
+          <ScalarProperty Name="custID" ColumnName="custID" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="modifydate" ColumnName="modifydate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payees">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.Payee">
+        <MappingFragment StoreEntitySet="Payee">
+          <ScalarProperty Name="payeeID" ColumnName="payeeID" />
+          <ScalarProperty Name="payeeName" ColumnName="payeeName" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="bPayCode" ColumnName="bPayCode" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="periodLookups">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.periodLookup">
+        <MappingFragment StoreEntitySet="periodLookup">
+          <ScalarProperty Name="periodCode" ColumnName="periodCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="phoneTypeLookups">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.phoneTypeLookup">
+        <MappingFragment StoreEntitySet="phoneTypeLookup">
+          <ScalarProperty Name="phoneTypeCode" ColumnName="phoneTypeCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StateLookups">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.StateLookup">
+        <MappingFragment StoreEntitySet="StateLookup">
+          <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transactionTypeLookups">
+      <EntityTypeMapping TypeName="NationalAustraliaBankModel.transactionTypeLookup">
+        <MappingFragment StoreEntitySet="transactionTypeLookup">
+          <ScalarProperty Name="transactionTypeID" ColumnName="transactionTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="fee" ColumnName="fee" />
+          <ScalarProperty Name="typeCode" ColumnName="typeCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,43 @@
+﻿@model NWBA.Models.customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>customer</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.login.userid)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.login.userid)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.custName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.custName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TFN)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TFN)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.dateCreated)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.dateCreated)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
